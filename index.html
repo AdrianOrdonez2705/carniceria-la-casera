@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Casera - Carnicería</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7f2ee;
+        color: #2b2b2b;
+      }
+
+      header {
+        background: linear-gradient(90deg, #8b0000, #c0392b);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header p {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      nav {
+        background: #2b2b2b;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #e74c3c;
+      }
+
+      .hero {
+        padding: 60px 20px;
+        text-align: center;
+        background: #8b0000;
+        color: white;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      .section {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #8b0000;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-top: 4px solid #c0392b;
+      }
+
+      .placeholder {
+        height: 90px;
+        background: #f0e6e6;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8b0000;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .price {
+        color: #c0392b;
+        font-weight: bold;
+        margin-top: 8px;
+      }
+
+      footer {
+        background: #2b2b2b;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      .deploy {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>La Casera</h1>
+      <p>Carnicería tradicional en Santa Cruz de la Sierra</p>
+      <p>Estudiante: Adrián Fabricio Ordóñez Paredes</p>
+    </header>
+
+    <nav>
+      <a href="#carnes">Carnes</a>
+      <a href="#cortes">Cortes</a>
+      <a href="#embutidos">Embutidos</a>
+    </nav>
+
+    <section class="hero">
+      <h2>Calidad fresca directo a tu mesa</h2>
+    </section>
+
+    <section class="section" id="carnes">
+      <h2>Carnes</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="placeholder">Carne de Res</div>
+          <p class="price">Bs. 55/kg</p>
+        </div>
+        <div class="card">
+          <div class="placeholder">Carne de Cerdo</div>
+          <p class="price">Bs. 48/kg</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cortes">
+      <h2>Cortes Especiales</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="placeholder">Entrecot</div>
+          <p class="price">Bs. 85/kg</p>
+        </div>
+        <div class="card">
+          <div class="placeholder">Filete Premium</div>
+          <p class="price">Bs. 120/kg</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="embutidos">
+      <h2>Embutidos</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="placeholder">Chorizo Casero</div>
+          <p class="price">Bs. 35/kg</p>
+        </div>
+        <div class="card">
+          <div class="placeholder">Salchichas Artesanales</div>
+          <p class="price">Bs. 40/kg</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 La Casera - Carnicería</p>
+      <div class="deploy">pagina web deployada con github actions</div>
+    </footer>
+  </body>
+</html>
